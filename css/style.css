@@ -5,6 +5,8 @@
 
 .allWrap {
   background-color: #2F343A;
+  overflow:hidden;
+  overflow-y:hidden;
 }
 
 body {
