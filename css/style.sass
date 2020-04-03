@@ -1,0 +1,639 @@
+$colorOrange: #C8A35F 
+$colorDark: #2F343A
+$colorDarkLighter: #393F47
+$fontColor: #FFF
+
+@mixin block4 
+    width: 19.6%
+    min-height: 180px
+    background-color: #393F47
+
+@mixin block4 
+    width: 19.6%
+    min-height: 180px
+    background-color: #393F47        
+* 
+    box-sizing: border-box
+
+.allWrap
+    background-color: $colorDark
+
+body
+    margin: 0
+
+.limiter
+    max-width: 1148px
+    margin: 0 auto    
+
+.block1
+    &__container
+        width: 100%
+        min-height: 45px 
+        background-color: $colorOrange
+
+    &__wrap
+        min-height: 45px  
+        display: flex
+        justify-content: space-between
+
+    &__lang
+        display: flex
+        align-items: center
+        margin-left: 29px
+        width: 72px
+
+        a 
+            text-decoration: none
+            text-transform: uppercase
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 72%
+            line-height: 14px
+            color: rgba(255,255,255,0.6)
+
+        a:hover 
+            color: #fff 
+
+    &__linkOne
+        padding-right: 13%
+
+    &__linkTwo
+        padding-right: 14%                     
+
+    &__number
+        display: flex
+        align-items: center
+
+        a
+            text-decoration: none             
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 14px
+            color: $fontColor      
+    &__email
+        display: flex
+        align-items: center
+        margin-right: 11px
+
+        a
+            text-decoration: none             
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 14px
+            color: $fontColor              
+
+.container2
+    width: 100%
+    background-color: $colorDark
+    min-height: 100px
+
+    &__wrap
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        min-height: 100px
+        align-items: center  
+
+    &__logo
+        display: flex
+        padding-left: 2.4%
+        height: 46px
+        width: 372px
+        justify-content: space-between
+
+    &__ourofice
+        display: flex
+        align-items: center
+        border-left: 1px solid white
+        width: 156px
+        display: flex
+        justify-content: flex-end
+
+        a
+            text-decoration: none
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            letter-spacing: 0.05em
+            color: $fontColor
+            width: 127px
+            position: relative
+            display: flex
+            justify-content: flex-end
+
+        a:before
+            content: url('/icon/locationBlock1.png')
+            position: absolute
+            left: 0px
+            top: -4px
+           
+    &__menu
+        display: flex
+        padding: 0
+        width: 422px
+        padding-right: 11px
+        display: flex
+        justify-content: space-between
+
+        li
+            list-style: none
+
+        a
+            text-decoration: none
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: $fontColor     
+    &__menu:active
+        
+        
+    &__burger
+        display: none
+        cursor: pointer
+        div
+            width: 44px
+            height: 5px
+            background-color: white
+            border-radius: 8px
+            margin-bottom: 3px            
+
+.block2
+    background-image: url('/img/backgroundBlock2.png')
+    width: 100%
+    height: 620px
+
+    &__container
+        display: flex
+        justify-content: center
+        width: 102%
+
+    &__titleWrap
+        border: 1px solid $colorOrange
+        width: 921px                     
+        min-height: 245px                                                                                                      
+        margin-top: 154px
+        position: relative
+
+    &__titleWrap::before
+        content: url('/icon/mouseBlock2.png')
+        position: absolute
+        justify-content: center
+        display: flex
+        width: 100%
+        bottom: -175px    
+
+    h1                                                            
+        margin: 0
+        font-family: Roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 64px
+        line-height: 75px
+        text-align: center
+        letter-spacing: 0.05em                  
+        text-transform: uppercase
+        color: $fontColor
+        margin-top: 42px
+        margin-bottom: 28px 
+
+    p 
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 28px
+        text-align: center
+        color: $fontColor
+        margin: 0
+        
+
+.block3
+    background-color: $colorDark
+    width: 100%
+    min-height: 559px
+    display: flex
+    justify-content: space-between
+
+    &__limiter1
+        max-width: 378px
+    &__limiter2
+        max-width: 360px
+        position: relative    
+
+    &__backroundLeft
+        background-color: $colorDarkLighter
+        width: 756px
+        margin-right: 410px
+        display: flex
+        justify-content: flex-end
+
+    &__backroundRight
+        background-color: $colorDarkLighter
+        width: 737px
+
+    &__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        max-width: 220px
+        min-height: 57px
+        background-color: $colorOrange
+       
+        a 
+            text-decoration: none
+            font-family: Roboto
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 25px
+            text-align: center
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: $fontColor
+    &__arrowsRight
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 25px
+        text-align: center
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: $colorOrange
+
+    &__arrowsLeft
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 25px
+        text-align: center
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: $colorOrange
+
+    &__cargoWrap::before
+        content: ""
+        width: 90px
+        height: 6px
+        background-color: $colorOrange
+        position: absolute    
+                  
+
+    &__cargoWrap
+        position: relative
+        width: 354px
+        border: 1px solid rgba(0,0 ,0 ,0 )
+        margin-top: 119px
+        h2
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 40px
+            line-height: 49px
+            letter-spacing: 2px
+            text-transform: uppercase                
+            color: $fontColor
+            margin: 0
+            margin-top: 45px
+            margin-bottom: 15px
+        p 
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 28px
+            color: $fontColor
+            margin: 0
+            margin-bottom: 41px
+
+.block3
+    &__container
+        position: absolute
+        left: -289px
+        top: 151px
+        width: 161%
+    &__sliderWrap
+        display: flex
+        justify-content: space-between
+        width: 112%
+
+    &__img
+        margin-top: 15px
+        img
+            width: 100%
+            min-width: 250px
+
+    &__arrowsWrap
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+
+    &__arrowsRight::after
+        content: url('/icon/arrowRight.png')
+    &__arrowsRight
+        display: flex
+        padding-right: 2px
+        width: 164px
+        justify-content: space-between
+        padding-right: 9px    
+        
+
+    &__arrowsLeft::before
+        content: url('/icon/arrowLeft.png')
+    &__arrowsLeft
+        display: flex
+        padding-right: 2px
+        width: 164px
+        justify-content: space-between
+        padding-right: 9px 
+
+
+.block4
+    width: 100%
+    background-color: $colorDark
+
+    &__container
+        max-width: 1133px
+        padding-top: 121px
+        padding-left: 24px
+
+    &__title
+        position: relative
+        font-family: Roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 27px
+        line-height: 49px
+        letter-spacing: 0.07em
+        text-transform: uppercase
+        color: $fontColor
+        margin-bottom: 48px
+        h2 
+            margin: 0
+            padding-top: 45px
+    &__title::before
+        content: ""
+        position: absolute
+        background-color: $colorOrange
+        width: 90px
+        height: 6px
+
+    &__images
+        display: grid
+        grid-template-columns: repeat(4, minmax(200px, 1fr) )
+        grid-template-rows: 182px 182px
+        .item
+            border: 1px solid #2F343A
+            max-width: 277px
+            background-color: $colorDarkLighter
+            display: flex
+            justify-content: center    
+            a
+                text-decoration: none
+                font-family: Roboto
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                letter-spacing: 0.05em
+                text-transform: uppercase
+                color: #FFFFFF
+        .item:hover
+            background-color: $colorOrange
+            .itemInner::before
+                content: url('/icon/airBlack.png')
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 100%
+                width: 68px
+                height: 68px
+                background-color: #FFFFFF
+                margin: 0 auto
+            .itemInner
+                margin-top: 39px 
+            a 
+                margin-top: 20px    
+                 
+            
+                
+        .itemInner::before
+            content: url('/icon/airWhite.png')
+            text-align: center
+            margin-bottom: 39px
+
+        .itemInner
+            display: flex
+            flex-direction: column
+            max-width: 168px
+            margin-top: 54px              
+                 
+     
+.block5
+    width: 100%
+    min-height: 719px
+    background-color: $colorDark
+    border: 1px solid rgba(0, 0, 0,0 )
+
+    &__backroundWrap
+        background-color: $colorDarkLighter
+        width: 410px 
+        height: 448px
+        margin: 0 auto
+        margin-top: 116px
+        position: relative           
+
+    &__wrap
+        display: flex    
+
+    &__gal
+        position: absolute
+        display: grid
+        width: 603px
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: 161px 161px
+        top: 80px
+        right: -356px
+        .img
+            background-image: url(/img/truckBlock5.png)
+            background-repeat: no-repeat
+            background-size: 100%
+            
+    &__strip
+        width: 90px
+        height: 6px 
+        background-color: $colorOrange
+        margin-bottom: 40px
+    &__text
+        position: absolute
+        left: -347px
+        top: 80px
+        h2
+            margin: 0 
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 40px
+            line-height: 49px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: $fontColor
+
+        p 
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 23px
+            color: $fontColor
+            width: 458px            
+             
+    &__title
+        border: 0.25px solid #C8A35F
+        background-color: #FFFFFF
+        display: flex
+        align-items: center
+        justify-content: center
+
+        a
+            text-decoration: none
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 64px
+            line-height: 75px
+            text-align: center
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #2F343A
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+
+        .span1
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            text-align: center
+            letter-spacing: 0.05em
+            color: #000000
+
+        .span2
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 14px
+            text-align: center
+            color: #000000
+
+
+.block6
+    width: 100%
+    height: 451px
+    background-image: url('/img/maps.png')
+    background-repeat: no-repeat
+    background-color: gray
+
+.block7
+    width: 100%
+    min-height: 161px
+    background-color: $colorOrange
+
+
+    &__limiterFooter
+        display: flex
+        align-items: center
+        height: 161px
+        max-width: 1148px
+        margin: 0 auto
+
+
+    &__container
+        display: flex
+        justify-content: space-between
+        width: 100%
+
+    &__link1
+        text-decoration: none
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        color: #F2F2F2
+        opacity: 0.8
+
+    &__link2
+        text-decoration: none
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        color: #2F343A
+
+    &__wrap
+        display: flex
+        width: 689px
+        justify-content: space-between
+        margin-left: 27px
+
+    &__inform
+        display: flex
+        flex-direction: column
+
+    &__iner
+        display: flex
+        width: 482px
+        justify-content: space-between
+        align-items: center               
+
+    &__number
+        display: flex
+        flex-direction: column
+        justify-content: center
+        a
+            text-decoration: none   
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #F2F2F2  
+      
+    &__devel
+        margin-right: 34px
+        display: flex
+        align-items: flex-end
+        a
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            text-align: right
+            text-decoration-line: underline
+            color: #2F343A
+            
+       
+
+       
+          
+                
